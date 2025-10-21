@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, intial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Traitus - A Lenda</title>
 	<meta name="description" content="Um assassino nato chamado Traitus que está se aventurando pelo youtube.">
 	<meta name="keywords" content="Assassinatos, Jogos e Muito mais">
@@ -15,89 +15,136 @@
 </head>
 <body>
 
-<header class="cabecalho">
-	<a href="index.html"><h1 class="logo"> Traitus </h1></a>
-	<button class="btn-menu" onclick="abrir()"> <i class="fa fa-bars fa-lg"></i></button>
-	<nav class="menu" id="menu">
-		<a class="btn-close"><i class="fa fa-times" onclick="fechar()"></i></a>
-		<ul>
-			<li><a href="#">Home</a></li>
-			<li><a href="#">Inscritos</a></li>
-			<li><a href="#">Vídeos</a></li>
-			<li><a href="#">Blog</a></li>
-			<li><a href="#">Sobre</a></li>
-			<li><a href="#">Contato</a></li>
-		</ul>
-</header>
-	<div class="banner">
-		<div class="title">
-			<h1> NÃO BRINQUE! </h1>
-			<h3> Traitus nunca está para brincadeira, não ouse arriscar. Cadastre-se no site e descubra sua verdadeira face. </h3>
-        </div>
-        <div class="buttons">
-        	<button class="btn-cadastrar"> Cadastrar <i class="fa fa-arrow-circle-right"></i></button>
-        	<button class="btn-sobre"> Sobre <i class="fa fa-question-circle"></i></button>
-        </div>
+<header class="header">
+	<div class="container">
+		<a href="index.html" class="logo">
+			<h1>Traitus</h1>
+		</a>
+		<button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+			<span class="hamburger"></span>
+		</button>
+		<nav class="nav" id="nav" role="navigation">
+			<button class="nav-close" id="navClose" aria-label="Fechar menu">
+				<i class="fa fa-times"></i>
+			</button>
+			<ul class="nav-list">
+				<li><a href="#" class="nav-link">Home</a></li>
+				<li><a href="#" class="nav-link">Inscritos</a></li>
+				<li><a href="#" class="nav-link">Vídeos</a></li>
+				<li><a href="#" class="nav-link">Blog</a></li>
+				<li><a href="#" class="nav-link">Sobre</a></li>
+				<li><a href="#" class="nav-link">Contato</a></li>
+			</ul>
+		</nav>
 	</div>
+</header>
+	<section class="hero">
+		<div class="container">
+			<div class="hero-content">
+				<div class="hero-text">
+					<h1>NÃO BRINQUE!</h1>
+					<p>Traitus nunca está para brincadeira, não ouse arriscar. Cadastre-se no site e descubra sua verdadeira face.</p>
+				</div>
+				<div class="hero-actions">
+					<button class="btn btn-primary">
+						Cadastrar <i class="fa fa-arrow-circle-right"></i>
+					</button>
+					<button class="btn btn-secondary">
+						Sobre <i class="fa fa-question-circle"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+	</section>
 
-	<main class="servicos container">
-            <article class="servico bg-white radius">
-               <a href="#"><img src="img/criacoes.jpg" alt="Campanhas publicitárias"></a>
-               <div class="inner">
-                   <a href="#"> Golaços Constantes </a>
-                   <h4>Rocket League</h4>
-                   <p>Se você está procurando um grande player com habilidades incríveis que impressionam até os mais experiêntes, você está no lugar certo, com Traitus no comando de um carro voador, o adversário jamais sairá impune. A vitória é apenas questão de tempo! </p>
-               </div>
-            </article>
-            <article class="servico bg-white radius">
-               <a href="#"><img src="img/md.jpg" alt="Marketing Digital"></a>
-               <div class="inner">
-                   <a href="#"> Aventureiro Imortal </a>
-                   <h4> The Witcher </h4>
-                   <p>Um assassino nato que está sempre a procura de melhoria e aventuras durante sua vida, seja na era medieval ou na era atual, dominante de todos os reinos não dá espaço para brincadeiras, principalmente quando está na companhia de seu cavalo!  </p>
-               </div>
-            </article>
-            <article class="servico bg-white radius">
-               <a href="#"><img src="img/cs.jpg" alt="Criação de Sites"></a>
-               <div class="inner">
-                   <a href="#"> Homem Guerrilheiro </a>
-                   <h4> Tanki Online </h4>
-                   <p>Alguém que vai à guerra sem medo de morrer, com seus tanks de batalha pronto para atirar quando você menos espera. Quem precisa ter medo da morte é o adversário, com Traitus dentro de um tank, os adversários correm, mas isso não basta, pois serão explodidos. </p>
-               </div>
-            </article>
-        </main>
-        <!-- NEWSLETTER -->
-        <section class="newsletter container bg-black">
-           <h2> Inscreva-se agora! </h2>
-           <h3>  Receba vídeos exclusivos, dicas e muito mais </h3>
-           <form>
-              <input class="bg-black radius" type="email" name="email" placeholder="Seu email">
-              <button class="bg-white radius"> Cadastrar </button>
-           </form>
-        </section>
-         <!-- RODAPÉ -->
-        <footer class="rodape container bg-gradient">
-          <div class="social-icons">
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-google"></i></a>
-            <a href="#"><i class="fa fa-instagram"></i></a>
-            <a href="#"><i class="fa fa-envelope"></i></a>
-          </div>
-          <p class="copyright">
-            Copyright © GustavoAbu 2019. Todos os direitos reservados.
-        </footer> 
-	<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
-	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> 
+	<main class="services">
+		<div class="container">
+			<div class="services-grid">
+				<article class="service-card">
+					<div class="service-image">
+						<img src="img/criacoes.jpg" alt="Rocket League - Golaços Constantes" loading="lazy">
+					</div>
+					<div class="service-content">
+						<h3>Golaços Constantes</h3>
+						<h4>Rocket League</h4>
+						<p>Se você está procurando um grande player com habilidades incríveis que impressionam até os mais experiêntes, você está no lugar certo, com Traitus no comando de um carro voador, o adversário jamais sairá impune. A vitória é apenas questão de tempo!</p>
+					</div>
+				</article>
+				<article class="service-card">
+					<div class="service-image">
+						<img src="img/md.jpg" alt="The Witcher - Aventureiro Imortal" loading="lazy">
+					</div>
+					<div class="service-content">
+						<h3>Aventureiro Imortal</h3>
+						<h4>The Witcher</h4>
+						<p>Um assassino nato que está sempre a procura de melhoria e aventuras durante sua vida, seja na era medieval ou na era atual, dominante de todos os reinos não dá espaço para brincadeiras, principalmente quando está na companhia de seu cavalo!</p>
+					</div>
+				</article>
+				<article class="service-card">
+					<div class="service-image">
+						<img src="img/cs.jpg" alt="Tanki Online - Homem Guerrilheiro" loading="lazy">
+					</div>
+					<div class="service-content">
+						<h3>Homem Guerrilheiro</h3>
+						<h4>Tanki Online</h4>
+						<p>Alguém que vai à guerra sem medo de morrer, com seus tanks de batalha pronto para atirar quando você menos espera. Quem precisa ter medo da morte é o adversário, com Traitus dentro de um tank, os adversários correm, mas isso não basta, pois serão explodidos.</p>
+					</div>
+				</article>
+			</div>
+		</div>
+	</main>
+	<section class="newsletter">
+		<div class="container">
+			<div class="newsletter-content">
+				<h2>Inscreva-se agora!</h2>
+				<p>Receba vídeos exclusivos, dicas e muito mais</p>
+			</div>
+			<form class="newsletter-form">
+				<input type="email" name="email" placeholder="Seu email" required>
+				<button type="submit">Cadastrar</button>
+			</form>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="social-icons">
+				<a href="#" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+				<a href="#" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+				<a href="#" aria-label="Google"><i class="fa fa-google"></i></a>
+				<a href="#" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
+				<a href="#" aria-label="Email"><i class="fa fa-envelope"></i></a>
+			</div>
+			<p class="copyright">
+				Copyright © GustavoAbu 2019. Todos os direitos reservados.
+			</p>
+		</div>
+	</footer> 
 	<script>
-    function abrir(){
-      document.getElementById("menu").style.display = "block"
-    }
+		// Modern JavaScript - No jQuery needed
+		const menuToggle = document.getElementById('menuToggle');
+		const nav = document.getElementById('nav');
+		const navClose = document.getElementById('navClose');
 
-    function fechar(){
-       document.getElementById("menu").style.display = "none"
-    }
+		function toggleMenu() {
+			nav.classList.toggle('nav-open');
+			document.body.classList.toggle('menu-open');
+		}
 
-</script>﻿
+		menuToggle?.addEventListener('click', toggleMenu);
+		navClose?.addEventListener('click', toggleMenu);
+
+		// Close menu when clicking outside
+		nav?.addEventListener('click', (e) => {
+			if (e.target === nav) toggleMenu();
+		});
+
+		// Close menu on escape key
+		document.addEventListener('keydown', (e) => {
+			if (e.key === 'Escape' && nav.classList.contains('nav-open')) {
+				toggleMenu();
+			}
+		});
+	</script>
 </body>
 </html>
