@@ -28,12 +28,19 @@
 				<i class="fa fa-times"></i>
 			</button>
 			<ul class="nav-list">
-				<li><a href="#" class="nav-link">Home</a></li>
-				<li><a href="#" class="nav-link">Inscritos</a></li>
-				<li><a href="#" class="nav-link">Vídeos</a></li>
-				<li><a href="#" class="nav-link">Blog</a></li>
-				<li><a href="#" class="nav-link">Sobre</a></li>
-				<li><a href="#" class="nav-link">Contato</a></li>
+				<li><a href="#" class="nav-link" data-translate="nav-home">Home</a></li>
+				<li><a href="#" class="nav-link" data-translate="nav-subscribers">Inscritos</a></li>
+				<li><a href="#" class="nav-link" data-translate="nav-videos">Vídeos</a></li>
+				<li><a href="#" class="nav-link" data-translate="nav-blog">Blog</a></li>
+				<li><a href="#" class="nav-link" data-translate="nav-about">Sobre</a></li>
+				<li><a href="#" class="nav-link" data-translate="nav-contact">Contato</a></li>
+				<li class="language-selector">
+					<select id="languageSelect" aria-label="Selecionar idioma">
+						<option value="pt-br">🇧🇷 PT</option>
+						<option value="en">🇺🇸 EN</option>
+						<option value="es">🇪🇸 ES</option>
+					</select>
+				</li>
 			</ul>
 		</nav>
 	</div>
@@ -42,15 +49,15 @@
 		<div class="container">
 			<div class="hero-content">
 				<div class="hero-text">
-					<h1>NÃO BRINQUE!</h1>
-					<p>Traitus nunca está para brincadeira, não ouse arriscar. Cadastre-se no site e descubra sua verdadeira face.</p>
+					<h1 data-translate="hero-title">NÃO BRINQUE!</h1>
+					<p data-translate="hero-subtitle">Traitus nunca está para brincadeira, não ouse arriscar. Cadastre-se no site e descubra sua verdadeira face.</p>
 				</div>
 				<div class="hero-actions">
 					<button class="btn btn-primary">
-						Cadastrar <i class="fa fa-arrow-circle-right"></i>
+						<span data-translate="btn-register">Cadastrar</span> <i class="fa fa-arrow-circle-right"></i>
 					</button>
 					<button class="btn btn-secondary">
-						Sobre <i class="fa fa-question-circle"></i>
+						<span data-translate="btn-about">Sobre</span> <i class="fa fa-question-circle"></i>
 					</button>
 				</div>
 			</div>
@@ -65,9 +72,9 @@
 						<img src="img/criacoes.jpg" alt="Rocket League - Golaços Constantes" loading="lazy">
 					</div>
 					<div class="service-content">
-						<h3>Golaços Constantes</h3>
-						<h4>Rocket League</h4>
-						<p>Se você está procurando um grande player com habilidades incríveis que impressionam até os mais experiêntes, você está no lugar certo, com Traitus no comando de um carro voador, o adversário jamais sairá impune. A vitória é apenas questão de tempo!</p>
+						<h3 data-translate="service1-title">Golaços Constantes</h3>
+						<h4 data-translate="service1-game">Rocket League</h4>
+						<p data-translate="service1-description">Se você está procurando um grande player com habilidades incríveis que impressionam até os mais experiêntes, você está no lugar certo, com Traitus no comando de um carro voador, o adversário jamais sairá impune. A vitória é apenas questão de tempo!</p>
 					</div>
 				</article>
 				<article class="service-card">
@@ -75,9 +82,9 @@
 						<img src="img/md.jpg" alt="The Witcher - Aventureiro Imortal" loading="lazy">
 					</div>
 					<div class="service-content">
-						<h3>Aventureiro Imortal</h3>
-						<h4>The Witcher</h4>
-						<p>Um assassino nato que está sempre a procura de melhoria e aventuras durante sua vida, seja na era medieval ou na era atual, dominante de todos os reinos não dá espaço para brincadeiras, principalmente quando está na companhia de seu cavalo!</p>
+						<h3 data-translate="service2-title">Aventureiro Imortal</h3>
+						<h4 data-translate="service2-game">The Witcher</h4>
+						<p data-translate="service2-description">Um assassino nato que está sempre a procura de melhoria e aventuras durante sua vida, seja na era medieval ou na era atual, dominante de todos os reinos não dá espaço para brincadeiras, principalmente quando está na companhia de seu cavalo!</p>
 					</div>
 				</article>
 				<article class="service-card">
@@ -85,9 +92,9 @@
 						<img src="img/cs.jpg" alt="Tanki Online - Homem Guerrilheiro" loading="lazy">
 					</div>
 					<div class="service-content">
-						<h3>Homem Guerrilheiro</h3>
-						<h4>Tanki Online</h4>
-						<p>Alguém que vai à guerra sem medo de morrer, com seus tanks de batalha pronto para atirar quando você menos espera. Quem precisa ter medo da morte é o adversário, com Traitus dentro de um tank, os adversários correm, mas isso não basta, pois serão explodidos.</p>
+						<h3 data-translate="service3-title">Homem Guerrilheiro</h3>
+						<h4 data-translate="service3-game">Tanki Online</h4>
+						<p data-translate="service3-description">Alguém que vai à guerra sem medo de morrer, com seus tanks de batalha pronto para atirar quando você menos espera. Quem precisa ter medo da morte é o adversário, com Traitus dentro de um tank, os adversários correm, mas isso não basta, pois serão explodidos.</p>
 					</div>
 				</article>
 			</div>
@@ -96,12 +103,12 @@
 	<section class="newsletter">
 		<div class="container">
 			<div class="newsletter-content">
-				<h2>Inscreva-se agora!</h2>
-				<p>Receba vídeos exclusivos, dicas e muito mais</p>
+				<h2 data-translate="newsletter-title">Inscreva-se agora!</h2>
+				<p data-translate="newsletter-subtitle">Receba vídeos exclusivos, dicas e muito mais</p>
 			</div>
 			<form class="newsletter-form">
-				<input type="email" name="email" placeholder="Seu email" required>
-				<button type="submit">Cadastrar</button>
+				<input type="email" name="email" data-translate-placeholder="newsletter-email-placeholder" placeholder="Seu email" required>
+				<button type="submit" data-translate="newsletter-button">Cadastrar</button>
 			</form>
 		</div>
 	</section>
@@ -125,7 +132,7 @@
 				<svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
 			</a>
 		</div>
-			<p class="copyright">
+			<p class="copyright" data-translate="copyright">
 				Copyright © GustavoAbu 2019. Todos os direitos reservados.
 			</p>
 		</div>
@@ -135,6 +142,7 @@
 		const menuToggle = document.getElementById('menuToggle');
 		const nav = document.getElementById('nav');
 		const navClose = document.getElementById('navClose');
+		const languageSelect = document.getElementById('languageSelect');
 
 		function toggleMenu() {
 			nav.classList.toggle('nav-open');
@@ -153,6 +161,123 @@
 		document.addEventListener('keydown', (e) => {
 			if (e.key === 'Escape' && nav.classList.contains('nav-open')) {
 				toggleMenu();
+			}
+		});
+
+		// Language Translations
+		const translations = {
+			'pt-br': {
+				'nav-home': 'Home',
+				'nav-subscribers': 'Inscritos',
+				'nav-videos': 'Vídeos',
+				'nav-blog': 'Blog',
+				'nav-about': 'Sobre',
+				'nav-contact': 'Contato',
+				'hero-title': 'NÃO BRINQUE!',
+				'hero-subtitle': 'Traitus nunca está para brincadeira, não ouse arriscar. Cadastre-se no site e descubra sua verdadeira face.',
+				'btn-register': 'Cadastrar',
+				'btn-about': 'Sobre',
+				'service1-title': 'Golaços Constantes',
+				'service1-game': 'Rocket League',
+				'service1-description': 'Se você está procurando um grande player com habilidades incríveis que impressionam até os mais experiêntes, você está no lugar certo, com Traitus no comando de um carro voador, o adversário jamais sairá impune. A vitória é apenas questão de tempo!',
+				'service2-title': 'Aventureiro Imortal',
+				'service2-game': 'The Witcher',
+				'service2-description': 'Um assassino nato que está sempre a procura de melhoria e aventuras durante sua vida, seja na era medieval ou na era atual, dominante de todos os reinos não dá espaço para brincadeiras, principalmente quando está na companhia de seu cavalo!',
+				'service3-title': 'Homem Guerrilheiro',
+				'service3-game': 'Tanki Online',
+				'service3-description': 'Alguém que vai à guerra sem medo de morrer, com seus tanks de batalha pronto para atirar quando você menos espera. Quem precisa ter medo da morte é o adversário, com Traitus dentro de um tank, os adversários correm, mas isso não basta, pois serão explodidos.',
+				'newsletter-title': 'Inscreva-se agora!',
+				'newsletter-subtitle': 'Receba vídeos exclusivos, dicas e muito mais',
+				'newsletter-email-placeholder': 'Seu email',
+				'newsletter-button': 'Cadastrar',
+				'copyright': 'Copyright © GustavoAbu 2019. Todos os direitos reservados.'
+			},
+			'en': {
+				'nav-home': 'Home',
+				'nav-subscribers': 'Subscribers',
+				'nav-videos': 'Videos',
+				'nav-blog': 'Blog',
+				'nav-about': 'About',
+				'nav-contact': 'Contact',
+				'hero-title': 'DON\'T MESS AROUND!',
+				'hero-subtitle': 'Traitus is never joking around, don\'t dare to risk it. Sign up on the website and discover his true face.',
+				'btn-register': 'Register',
+				'btn-about': 'About',
+				'service1-title': 'Constant Goals',
+				'service1-game': 'Rocket League',
+				'service1-description': 'If you\'re looking for a great player with incredible skills that impress even the most experienced, you\'re in the right place. With Traitus commanding a flying car, opponents will never get away unpunished. Victory is just a matter of time!',
+				'service2-title': 'Immortal Adventurer',
+				'service2-game': 'The Witcher',
+				'service2-description': 'A born assassin who is always looking for improvement and adventures throughout his life, whether in the medieval era or the current era, dominant of all kingdoms leaves no room for games, especially when in the company of his horse!',
+				'service3-title': 'Guerrilla Warrior',
+				'service3-game': 'Tanki Online',
+				'service3-description': 'Someone who goes to war without fear of dying, with his battle tanks ready to shoot when you least expect it. Who needs to fear death is the opponent, with Traitus inside a tank, opponents run, but that\'s not enough, because they will be blown up.',
+				'newsletter-title': 'Subscribe now!',
+				'newsletter-subtitle': 'Receive exclusive videos, tips and much more',
+				'newsletter-email-placeholder': 'Your email',
+				'newsletter-button': 'Register',
+				'copyright': 'Copyright © GustavoAbu 2019. All rights reserved.'
+			},
+			'es': {
+				'nav-home': 'Inicio',
+				'nav-subscribers': 'Suscriptores',
+				'nav-videos': 'Videos',
+				'nav-blog': 'Blog',
+				'nav-about': 'Acerca',
+				'nav-contact': 'Contacto',
+				'hero-title': '¡NO JUEGUES!',
+				'hero-subtitle': 'Traitus nunca está bromeando, no te atrevas a arriesgarte. Regístrate en el sitio web y descubre su verdadero rostro.',
+				'btn-register': 'Registrarse',
+				'btn-about': 'Acerca',
+				'service1-title': 'Goles Constantes',
+				'service1-game': 'Rocket League',
+				'service1-description': 'Si buscas un gran jugador con habilidades increíbles que impresionan incluso a los más experimentados, estás en el lugar correcto. Con Traitus al mando de un auto volador, los oponentes nunca saldrán impunes. ¡La victoria es solo cuestión de tiempo!',
+				'service2-title': 'Aventurero Inmortal',
+				'service2-game': 'The Witcher',
+				'service2-description': 'Un asesino nato que siempre busca mejora y aventuras a lo largo de su vida, ya sea en la era medieval o la era actual, dominante de todos los reinos no deja espacio para juegos, ¡especialmente cuando está en compañía de su caballo!',
+				'service3-title': 'Guerrero Guerrillero',
+				'service3-game': 'Tanki Online',
+				'service3-description': 'Alguien que va a la guerra sin miedo a morir, con sus tanques de batalla listos para disparar cuando menos lo esperas. Quien necesita temer la muerte es el oponente, con Traitus dentro de un tanque, los oponentes corren, pero eso no es suficiente, porque serán volados.',
+				'newsletter-title': '¡Suscríbete ahora!',
+				'newsletter-subtitle': 'Recibe videos exclusivos, consejos y mucho más',
+				'newsletter-email-placeholder': 'Tu email',
+				'newsletter-button': 'Registrarse',
+				'copyright': 'Copyright © GustavoAbu 2019. Todos los derechos reservados.'
+			}
+		};
+
+		function changeLanguage(lang) {
+			// Update text content
+			document.querySelectorAll('[data-translate]').forEach(element => {
+				const key = element.getAttribute('data-translate');
+				if (translations[lang] && translations[lang][key]) {
+					element.textContent = translations[lang][key];
+				}
+			});
+
+			// Update placeholders
+			document.querySelectorAll('[data-translate-placeholder]').forEach(element => {
+				const key = element.getAttribute('data-translate-placeholder');
+				if (translations[lang] && translations[lang][key]) {
+					element.placeholder = translations[lang][key];
+				}
+			});
+
+			// Save language preference
+			localStorage.setItem('traitus-language', lang);
+		}
+
+		// Language selector event
+		languageSelect?.addEventListener('change', (e) => {
+			changeLanguage(e.target.value);
+		});
+
+		// Load saved language or default to Portuguese
+		document.addEventListener('DOMContentLoaded', () => {
+			const savedLang = localStorage.getItem('traitus-language') || 'pt-br';
+			languageSelect.value = savedLang;
+			if (savedLang !== 'pt-br') {
+				changeLanguage(savedLang);
 			}
 		});
 	</script>
